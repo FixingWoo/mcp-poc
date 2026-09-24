@@ -119,6 +119,25 @@ stdio 방식의 MCP 클라이언트에는 빌드 결과를 직접 실행하도�
 
 MCP 클라이언트의 실행 명령으로 `npm start`를 사용하면 npm 출력이 프로토콜 채널에 섞일 수 있으므로 `node dist/index.js`를 직접 실행합니다.
 
+### Codex에 등록
+
+절대 경로를 현재 환경에 맞게 바꾼 뒤 다음 명령을 실행합니다.
+
+```bash
+codex mcp add kpi \
+  --env KPI_DATA_PATH=/absolute/path/to/mcp-poc/data/kpis.local.json \
+  -- node /absolute/path/to/mcp-poc/dist/index.js
+```
+
+등록 상태를 확인합니다.
+
+```bash
+codex mcp get kpi
+codex mcp list
+```
+
+Codex 데스크톱이나 IDE 확장에서는 MCP 서버 등록 후 해당 클라이언트를 다시 시작합니다. 새 세션에서 “내 KPI 전체 현황을 요약해줘”와 같이 요청해 Tool 선택과 호출을 확인할 수 있습니다.
+
 ## 검증
 
 타입 검사:
