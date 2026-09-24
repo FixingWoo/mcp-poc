@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/server";
 import { serveStdio } from "@modelcontextprotocol/server/stdio";
 
+import { registerCalculateAchievementTool } from "./tools/calculate-achievement.js";
 import { registerListKpisTool } from "./tools/list-kpis.js";
 
 export function createServer(): McpServer {
@@ -10,6 +11,7 @@ export function createServer(): McpServer {
   });
 
   registerListKpisTool(server);
+  registerCalculateAchievementTool(server);
 
   return server;
 }
