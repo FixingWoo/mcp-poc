@@ -2,7 +2,7 @@
 
 AI 클라이언트가 MCP(Model Context Protocol)를 통해 개인 KPI 데이터를 조회하고 분석할 수 있는지 검증하는 TypeScript 기반 PoC입니다.
 
-상세 범위와 성공 기준은 [프로젝트 기획서](docs/PROJECT_PLAN.md)를 참고하세요.
+상세 범위와 성공 기준은 [프로젝트 기획서](docs/PROJECT_PLAN.md), 검증 결과와 도입 판단은 [PoC 결과 보고서](docs/POC_RESULT.md)를 참고하세요.
 
 ## 제공 기능
 
