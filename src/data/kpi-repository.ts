@@ -1,4 +1,6 @@
 import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 
 import { isKpiProfile, type KpiProfile } from "../domain/kpi.js";
 
@@ -9,6 +11,12 @@ const KPI_EXAMPLE_DATA_URL = new URL(
 );
 
 async function resolveDefaultDataUrl(): Promise<URL> {
+  const configuredPath = process.env.KPI_DATA_PATH;
+
+  if (configuredPath !== undefined && configuredPath.length > 0) {
+    return pathToFileURL(resolve(configuredPath));
+  }
+
   try {
     await readFile(KPI_LOCAL_DATA_URL, "utf8");
     return KPI_LOCAL_DATA_URL;

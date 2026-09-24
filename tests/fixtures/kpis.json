@@ -1,0 +1,29 @@
+{
+  "owner": "테스트 사용자",
+  "kpis": [
+    {
+      "id": "not-started",
+      "category": "테스트 목표",
+      "name": "미착수 KPI",
+      "target": 100,
+      "actual": 0,
+      "unit": "%"
+    },
+    {
+      "id": "in-progress",
+      "category": "테스트 목표",
+      "name": "진행 중 KPI",
+      "target": 100,
+      "actual": 50,
+      "unit": "%"
+    },
+    {
+      "id": "completed",
+      "category": "테스트 목표",
+      "name": "완료 KPI",
+      "target": 100,
+      "actual": 100,
+      "unit": "%"
+    }
+  ]
+}
