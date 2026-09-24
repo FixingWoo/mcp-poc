@@ -1,0 +1,13 @@
+{
+  "owner": "테스트 사용자",
+  "kpis": [
+    {
+      "id": "invalid-target",
+      "category": "오류 검증",
+      "name": "목표값이 잘못된 KPI",
+      "target": 0,
+      "actual": 50,
+      "unit": "%"
+    }
+  ]
+}
