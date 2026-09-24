@@ -1,0 +1,45 @@
+{
+  "owner": "예시 사용자",
+  "kpis": [
+    {
+      "id": "ai-certification",
+      "category": "AI 기술 역량 강화",
+      "name": "AI 자격증 취득",
+      "target": 100,
+      "actual": 0,
+      "unit": "%"
+    },
+    {
+      "id": "mcp-learning",
+      "category": "AI 기술 역량 강화",
+      "name": "MCP 관련 강의·문서·실습을 통한 기술 학습",
+      "target": 100,
+      "actual": 0,
+      "unit": "%"
+    },
+    {
+      "id": "mcp-local-poc",
+      "category": "AI PoC 프로젝트 진행",
+      "name": "MCP 로컬 환경 기반 PoC 1건 구현",
+      "target": 100,
+      "actual": 0,
+      "unit": "%"
+    },
+    {
+      "id": "schedule-compliance",
+      "category": "개발/디자인 공수 효율화",
+      "name": "업무 기간 준수 90% 달성",
+      "target": 100,
+      "actual": 100,
+      "unit": "%"
+    },
+    {
+      "id": "engineer-certification",
+      "category": "기본 업무 개선 및 자기개발",
+      "name": "정보처리기사 자격증 취득",
+      "target": 100,
+      "actual": 50,
+      "unit": "%"
+    }
+  ]
+}
